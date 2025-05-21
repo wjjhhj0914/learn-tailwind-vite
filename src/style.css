@@ -1,1 +1,4 @@
 @import 'tailwindcss';
+@import './common/theme.css';
+/* 수동으로 다크모드를 적용하는 경우 */
+/* @custom-variant dark (&:where(.dark, .dark *));  */

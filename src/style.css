@@ -2,3 +2,19 @@
 /* @import './common/theme.css'; */
 /* 수동으로 다크모드를 적용하는 경우 */
 /* @custom-variant dark (&:where(.dark, .dark *));  */
+
+@theme {
+  --color-like: skyblue;
+  --color-lion: green;
+
+  --building: url(../src/assets/images/building.avif);
+}
+
+@layer components {
+  .bootcamp {
+    background-color: orange;
+    padding: 1em;
+    margin-block: 1em;
+    border: 5px solid blue;
+  }
+}

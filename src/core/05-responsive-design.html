@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Design</title>
+    <link rel="shortcut icon" href="/favicon/likelion.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon/likelion.svg" type="image/svg" />
+    <link rel="preload" as="font" href="/font/suit/SUIT-Variable.woff2" />
+    <link rel="stylesheet" href="/font/suit/SUIT-Variable.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="m-12 bg-amber-300 max-lg:bg-violet-300">
+    <a href="/index.html">메인 페이지 이동</a>
+    <br />
+    <h1>Responsive Design</h1>
+    <figure class="md:flex-row md:w-100 md:text-left flex flex-col items-center gap-6 w-1/2 text-center p-6 bg-white rounded-lg drop-shadow-lg">
+      <img class="md:h-9 md:mt-0 h-6 mt-4" src="/vite.svg" alt="" />
+      <figcaption class="flex flex-col">
+        <h3 class="text-2xl text-cyan-500 font-semibold" lang="en">Tailwind <abbr class="no-underline cursor-help" title="Cascading Style Sheet">CSS</abbr></h3>
+        <p class="mt-2 text-sm text-gray-700">다양한 Tailwind CSS의 유틸리티 세트를 활용해 복잡한 컴포넌트를 구성할 수 있습니다.</p>
+        <a class="md:w-full inline-block mt-2 mx-auto w-1/2 text-sm text-cyan-600" href="https://tailwindcss.com/docs/utility-first" rel="noopener noreferrer" target="_blank"> 유틸리티 퍼스트 펀더멘탈 </a>
+      </figcaption>
+    </figure>
+    <hr />
+    <!-- 부모 컨테이너 크기에 반응하는 레이아웃 -->
+
+    <div class="@container/lion w-100">
+      <div class="@container w-100">
+        <div class="flex flex-col @md/lion:flex-row">
+          <div>TailwindCSS</div>
+          <div>Container Query</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -17,4 +17,18 @@
     margin-block: 1em;
     border: 5px solid blue;
   }
+
+  .like {
+    @apply border-4 border-red-300 p-4 my-4 bg-blue-200;
+  }
 }
+
+@utility shape-circle {
+  shape-outside: circle(50%);
+}
+/* 
+@layer utility {
+  .shape-circle {
+    shape-outside: circle(50%);
+  }
+} */

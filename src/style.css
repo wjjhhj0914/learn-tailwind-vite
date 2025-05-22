@@ -4,10 +4,20 @@
 /* @custom-variant dark (&:where(.dark, .dark *));  */
 
 @theme {
-  --color-like: skyblue;
-  --color-lion: green;
+  --pretendard: 'Pretendard Variable', Pretendard, sans-serif;
+  --color-likelion-black: #303033;
+  --color-likelion-red: #b02c20;
+  --color-likelion-green: #58dc76;
+  --color-likelion-silver: #f5f5f5;
 
   --building: url(../src/assets/images/building.avif);
+
+  --minmax-size: 240px;
+  --autofit: repeat(auto-fit, minmax(var(--minmax-size), 1fr));
+
+  --color-grey-200: #f5f5f5;
+  --color-primary: rgb(48, 48, 51);
+  --color-info: #58dc76;
 }
 
 @layer components {

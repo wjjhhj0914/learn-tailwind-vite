@@ -10,9 +10,257 @@
     <link rel="stylesheet" href="/font/suit/SUIT-Variable.css" />
     <script type="module" src="/src/main.js"></script>
   </head>
-  <body>
+  <body class="m-12 font-pretendard">
     <a href="/index.html">메인 페이지 이동</a>
     <br />
     <h1>Kream 상품 카드</h1>
+    <hr class="my-5" />
+    <h2 class="text-2xl">상품 카드 컴포넌트</h2>
+    <!-- 상품 카드 -->
+    <div class="card min-w-60 space-y-3">
+      <!-- 이미지와 북마크 추가 버튼 그룹 컨테이너 -->
+      <div class="relative bg-likelion-silver rounded-md">
+        <picture>
+          <source srcset="../assets/kream/just-dropped/webp/dropped-product-01.webp" />
+          <img src="../assets/kream/just-dropped/png/dropped-product-01.png" alt="" />
+        </picture>
+        <button class="absolute right-4 bottom-4" type="button" aria-label="즐겨찾기">
+          <svg width="14" height="19" viewBox="0 0 14 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0.616211H2C0.9 0.616211 0.0100002 1.51621 0.0100002 2.61621L0 18.6162L7 15.6162L14 18.6162V2.61621C14 1.51621 13.1 0.616211 12 0.616211ZM12 15.6162L7 13.4362L2 15.6162V2.61621H12V15.6162Z" fill="#303033" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- 상품 카드 제목과 설명 그룹 컨테이너 -->
+      <div>
+        <!-- 상품 카드 제목 -->
+        <a href="/" class="text-[21px] font-bold leading-snug">Problemallways</a>
+        <!-- 상품 카드 설명 -->
+        <p class="text-xs leading-[1.6]">Problemallways Logo Denim Pocket Camp Cap Blue</p>
+      </div>
+
+      <!-- 적립 및 배송관련 그룹 컨테이너 -->
+      <div class="flex gap-1.5">
+        <span class="border rounded-sm p-1 leading-[1.6] text-xs">적립</span>
+        <span class="border border-current rounded-sm p-1 leading-[1.6] text-xs text-likelion-green inline-flex items-center gap-1">
+          <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.625 0.283203H2.54167L0.5 6.69987H3.41667L1.375 11.9499H2.25L6.91667 5.5332H4.29167L6.625 0.283203Z" fill="currentColor" />
+          </svg>
+          빠른배송
+        </span>
+      </div>
+
+      <!-- 상품 가격 정보 그룹 컨테이너 -->
+      <div class="text-[21px] font-bold">
+        <em class="text-likelion-red not-italic"><span class="sr-only">할인율</span>10%</em>
+        <span>76,500원</span>
+        <span class="block text-xs font-normal leading-[1.6]">구매가</span>
+      </div>
+    </div>
+    <hr class="my-5" />
+    <h2 class="text-2xl">상품 레이아웃</h2>
+    <!-- 상품 레이아웃 -->
+    <div class="grid grid-cols-(--autofit) gap-5">
+      <div class="card min-w-60 space-y-3">
+        <!-- 이미지와 북마크 추가 버튼 그룹 컨테이너 -->
+        <div class="relative bg-likelion-silver rounded-md">
+          <picture>
+            <source srcset="../assets/kream/just-dropped/webp/dropped-product-01.webp" />
+            <img src="../assets/kream/just-dropped/png/dropped-product-01.png" alt="" />
+          </picture>
+          <button class="absolute right-4 bottom-4" type="button" aria-label="즐겨찾기">
+            <svg width="14" height="19" viewBox="0 0 14 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 0.616211H2C0.9 0.616211 0.0100002 1.51621 0.0100002 2.61621L0 18.6162L7 15.6162L14 18.6162V2.61621C14 1.51621 13.1 0.616211 12 0.616211ZM12 15.6162L7 13.4362L2 15.6162V2.61621H12V15.6162Z" fill="#303033" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- 상품 카드 제목과 설명 그룹 컨테이너 -->
+        <div>
+          <!-- 상품 카드 제목 -->
+          <a href="/" class="text-[21px] font-bold leading-snug">Problemallways</a>
+          <!-- 상품 카드 설명 -->
+          <p class="text-xs leading-[1.6]">Problemallways Logo Denim Pocket Camp Cap Blue</p>
+        </div>
+
+        <!-- 적립 및 배송관련 그룹 컨테이너 -->
+        <div class="flex gap-1.5">
+          <span class="border rounded-sm p-1 leading-[1.6] text-xs">적립</span>
+          <span class="border border-current rounded-sm p-1 leading-[1.6] text-xs text-likelion-green inline-flex items-center gap-1">
+            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.625 0.283203H2.54167L0.5 6.69987H3.41667L1.375 11.9499H2.25L6.91667 5.5332H4.29167L6.625 0.283203Z" fill="currentColor" />
+            </svg>
+            빠른배송
+          </span>
+        </div>
+
+        <!-- 상품 가격 정보 그룹 컨테이너 -->
+        <div class="text-[21px] font-bold">
+          <em class="text-likelion-red not-italic"><span class="sr-only">할인율</span>10%</em>
+          <span>76,500원</span>
+          <span class="block text-xs font-normal leading-[1.6]">구매가</span>
+        </div>
+      </div>
+      <div class="card min-w-60 space-y-3">
+        <!-- 이미지와 북마크 추가 버튼 그룹 컨테이너 -->
+        <div class="relative bg-likelion-silver rounded-md">
+          <picture>
+            <source srcset="../assets/kream/just-dropped/webp/dropped-product-01.webp" />
+            <img src="../assets/kream/just-dropped/png/dropped-product-01.png" alt="" />
+          </picture>
+          <button class="absolute right-4 bottom-4" type="button" aria-label="즐겨찾기">
+            <svg width="14" height="19" viewBox="0 0 14 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 0.616211H2C0.9 0.616211 0.0100002 1.51621 0.0100002 2.61621L0 18.6162L7 15.6162L14 18.6162V2.61621C14 1.51621 13.1 0.616211 12 0.616211ZM12 15.6162L7 13.4362L2 15.6162V2.61621H12V15.6162Z" fill="#303033" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- 상품 카드 제목과 설명 그룹 컨테이너 -->
+        <div>
+          <!-- 상품 카드 제목 -->
+          <a href="/" class="text-[21px] font-bold leading-snug">Problemallways</a>
+          <!-- 상품 카드 설명 -->
+          <p class="text-xs leading-[1.6]">Problemallways Logo Denim Pocket Camp Cap Blue</p>
+        </div>
+
+        <!-- 적립 및 배송관련 그룹 컨테이너 -->
+        <div class="flex gap-1.5">
+          <span class="border rounded-sm p-1 leading-[1.6] text-xs">적립</span>
+          <span class="border border-current rounded-sm p-1 leading-[1.6] text-xs text-likelion-green inline-flex items-center gap-1">
+            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.625 0.283203H2.54167L0.5 6.69987H3.41667L1.375 11.9499H2.25L6.91667 5.5332H4.29167L6.625 0.283203Z" fill="currentColor" />
+            </svg>
+            빠른배송
+          </span>
+        </div>
+
+        <!-- 상품 가격 정보 그룹 컨테이너 -->
+        <div class="text-[21px] font-bold">
+          <em class="text-likelion-red not-italic"><span class="sr-only">할인율</span>10%</em>
+          <span>76,500원</span>
+          <span class="block text-xs font-normal leading-[1.6]">구매가</span>
+        </div>
+      </div>
+      <div class="card min-w-60 space-y-3">
+        <!-- 이미지와 북마크 추가 버튼 그룹 컨테이너 -->
+        <div class="relative bg-likelion-silver rounded-md">
+          <picture>
+            <source srcset="../assets/kream/just-dropped/webp/dropped-product-01.webp" />
+            <img src="../assets/kream/just-dropped/png/dropped-product-01.png" alt="" />
+          </picture>
+          <button class="absolute right-4 bottom-4" type="button" aria-label="즐겨찾기">
+            <svg width="14" height="19" viewBox="0 0 14 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 0.616211H2C0.9 0.616211 0.0100002 1.51621 0.0100002 2.61621L0 18.6162L7 15.6162L14 18.6162V2.61621C14 1.51621 13.1 0.616211 12 0.616211ZM12 15.6162L7 13.4362L2 15.6162V2.61621H12V15.6162Z" fill="#303033" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- 상품 카드 제목과 설명 그룹 컨테이너 -->
+        <div>
+          <!-- 상품 카드 제목 -->
+          <a href="/" class="text-[21px] font-bold leading-snug">Problemallways</a>
+          <!-- 상품 카드 설명 -->
+          <p class="text-xs leading-[1.6]">Problemallways Logo Denim Pocket Camp Cap Blue</p>
+        </div>
+
+        <!-- 적립 및 배송관련 그룹 컨테이너 -->
+        <div class="flex gap-1.5">
+          <span class="border rounded-sm p-1 leading-[1.6] text-xs">적립</span>
+          <span class="border border-current rounded-sm p-1 leading-[1.6] text-xs text-likelion-green inline-flex items-center gap-1">
+            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.625 0.283203H2.54167L0.5 6.69987H3.41667L1.375 11.9499H2.25L6.91667 5.5332H4.29167L6.625 0.283203Z" fill="currentColor" />
+            </svg>
+            빠른배송
+          </span>
+        </div>
+
+        <!-- 상품 가격 정보 그룹 컨테이너 -->
+        <div class="text-[21px] font-bold">
+          <em class="text-likelion-red not-italic"><span class="sr-only">할인율</span>10%</em>
+          <span>76,500원</span>
+          <span class="block text-xs font-normal leading-[1.6]">구매가</span>
+        </div>
+      </div>
+      <div class="card min-w-60 space-y-3">
+        <!-- 이미지와 북마크 추가 버튼 그룹 컨테이너 -->
+        <div class="relative bg-likelion-silver rounded-md">
+          <picture>
+            <source srcset="../assets/kream/just-dropped/webp/dropped-product-01.webp" />
+            <img src="../assets/kream/just-dropped/png/dropped-product-01.png" alt="" />
+          </picture>
+          <button class="absolute right-4 bottom-4" type="button" aria-label="즐겨찾기">
+            <svg width="14" height="19" viewBox="0 0 14 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 0.616211H2C0.9 0.616211 0.0100002 1.51621 0.0100002 2.61621L0 18.6162L7 15.6162L14 18.6162V2.61621C14 1.51621 13.1 0.616211 12 0.616211ZM12 15.6162L7 13.4362L2 15.6162V2.61621H12V15.6162Z" fill="#303033" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- 상품 카드 제목과 설명 그룹 컨테이너 -->
+        <div>
+          <!-- 상품 카드 제목 -->
+          <a href="/" class="text-[21px] font-bold leading-snug">Problemallways</a>
+          <!-- 상품 카드 설명 -->
+          <p class="text-xs leading-[1.6]">Problemallways Logo Denim Pocket Camp Cap Blue</p>
+        </div>
+
+        <!-- 적립 및 배송관련 그룹 컨테이너 -->
+        <div class="flex gap-1.5">
+          <span class="border rounded-sm p-1 leading-[1.6] text-xs">적립</span>
+          <span class="border border-current rounded-sm p-1 leading-[1.6] text-xs text-likelion-green inline-flex items-center gap-1">
+            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.625 0.283203H2.54167L0.5 6.69987H3.41667L1.375 11.9499H2.25L6.91667 5.5332H4.29167L6.625 0.283203Z" fill="currentColor" />
+            </svg>
+            빠른배송
+          </span>
+        </div>
+
+        <!-- 상품 가격 정보 그룹 컨테이너 -->
+        <div class="text-[21px] font-bold">
+          <em class="text-likelion-red not-italic"><span class="sr-only">할인율</span>10%</em>
+          <span>76,500원</span>
+          <span class="block text-xs font-normal leading-[1.6]">구매가</span>
+        </div>
+      </div>
+      <div class="card min-w-60 space-y-3">
+        <!-- 이미지와 북마크 추가 버튼 그룹 컨테이너 -->
+        <div class="relative bg-likelion-silver rounded-md">
+          <picture>
+            <source srcset="../assets/kream/just-dropped/webp/dropped-product-01.webp" />
+            <img src="../assets/kream/just-dropped/png/dropped-product-01.png" alt="" />
+          </picture>
+          <button class="absolute right-4 bottom-4" type="button" aria-label="즐겨찾기">
+            <svg width="14" height="19" viewBox="0 0 14 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 0.616211H2C0.9 0.616211 0.0100002 1.51621 0.0100002 2.61621L0 18.6162L7 15.6162L14 18.6162V2.61621C14 1.51621 13.1 0.616211 12 0.616211ZM12 15.6162L7 13.4362L2 15.6162V2.61621H12V15.6162Z" fill="#303033" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- 상품 카드 제목과 설명 그룹 컨테이너 -->
+        <div>
+          <!-- 상품 카드 제목 -->
+          <a href="/" class="text-[21px] font-bold leading-snug">Problemallways</a>
+          <!-- 상품 카드 설명 -->
+          <p class="text-xs leading-[1.6]">Problemallways Logo Denim Pocket Camp Cap Blue</p>
+        </div>
+
+        <!-- 적립 및 배송관련 그룹 컨테이너 -->
+        <div class="flex gap-1.5">
+          <span class="border rounded-sm p-1 leading-[1.6] text-xs">적립</span>
+          <span class="border border-current rounded-sm p-1 leading-[1.6] text-xs text-likelion-green inline-flex items-center gap-1">
+            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.625 0.283203H2.54167L0.5 6.69987H3.41667L1.375 11.9499H2.25L6.91667 5.5332H4.29167L6.625 0.283203Z" fill="currentColor" />
+            </svg>
+            빠른배송
+          </span>
+        </div>
+
+        <!-- 상품 가격 정보 그룹 컨테이너 -->
+        <div class="text-[21px] font-bold">
+          <em class="text-likelion-red not-italic"><span class="sr-only">할인율</span>10%</em>
+          <span>76,500원</span>
+          <span class="block text-xs font-normal leading-[1.6]">구매가</span>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
